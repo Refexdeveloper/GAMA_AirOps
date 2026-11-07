@@ -1,0 +1,12 @@
+-- Run manually in MySQL if automated migration fails.
+-- Replace proforma_invoices_ibfk_2281 with your actual FK name from:
+--   SHOW CREATE TABLE proforma_invoices;
+
+-- ALTER TABLE proforma_invoices DROP FOREIGN KEY proforma_invoices_ibfk_2281;
+-- ALTER TABLE proforma_invoices MODIFY COLUMN aircraft_id INT NULL;
+-- ALTER TABLE proforma_invoices ADD COLUMN aircraft_reg_no VARCHAR(45) NULL;
+-- ALTER TABLE proforma_invoices ADD COLUMN aircraft_model_name VARCHAR(255) NULL;
+-- ALTER TABLE proforma_invoices
+--   ADD CONSTRAINT proforma_invoices_aircraft_id_fk
+--   FOREIGN KEY (aircraft_id) REFERENCES masters_aircrafts (id)
+--   ON DELETE SET NULL ON UPDATE CASCADE;

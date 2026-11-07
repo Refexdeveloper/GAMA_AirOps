@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "root",
+    "password": "muruku",
+    "database": "gama_development",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql",
+    "logging": false,
+    "define": {
+      "underscored": true
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "muruku",
+    "database": "gama_test",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "muruku",
+    "database": "gama_production",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql"
+  }
+}

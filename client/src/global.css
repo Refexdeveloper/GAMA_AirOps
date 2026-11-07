@@ -1,0 +1,8 @@
+/* scrollbar */
+@import 'simplebar-react/dist/simplebar.min.css';
+
+.arrow {
+    top: 11px;
+    right: 6px;
+    position: absolute;
+}
